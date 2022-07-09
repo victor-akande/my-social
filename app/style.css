@@ -306,27 +306,27 @@ main .container .left .profile {
 }
 
 .middle .stories .story:nth-child(1) {
-    background: url('images/story-1.jpg') no-repeat center center/cover;
+    background: url('https://pbs.twimg.com/profile_images/1512774369558372361/IegUPpg-_400x400.jpg') no-repeat center center/cover;
 }
 
 .middle .stories .story:nth-child(2) {
-    background: url('images/story-2.jpg') no-repeat center center/cover;
+    background: url('https://deadline.com/wp-content/uploads/2020/09/jennifer-aniston-e1599068779265.jpg') no-repeat center center/cover;
 }
 
 .middle .stories .story:nth-child(3) {
-    background: url('images/story-3.jpg') no-repeat center center/cover;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Charlie_Sheen_March_2009.JPG/800px-Charlie_Sheen_March_2009.JPG') no-repeat center center/cover;
 }
 
 .middle .stories .story:nth-child(4) {
-    background: url('images/story-4.jpg') no-repeat center center/cover;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/7/79/Matt_LeBlanc_2010.jpg') no-repeat center center/cover;
 }
 
 .middle .stories .story:nth-child(5) {
-    background: url('images/story-5.jpg') no-repeat center center/cover;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/3/3f/Lisa_Kudrow_crop.jpg') no-repeat center center/cover;
 }
 
 .middle .stories .story:nth-child(6) {
-    background: url('images/story-6.jpg') no-repeat center center/cover;
+    background: url('https://cdn.mos.cms.futurecdn.net/gLxHhs5JVtqMQCLx78rbZA.jpg') no-repeat center center/cover;
 }
 
 .middle .story .profile-picture {
@@ -389,6 +389,10 @@ main .container .left .profile {
     align-items: center;
     font-size: 1.4rem;
     margin: 0.6rem;
+}
+
+.middle .feeds .action-buttons i {
+    cursor: pointer;
 }
 
 .middle .feeds .liked-by {
