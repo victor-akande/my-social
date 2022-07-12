@@ -1,795 +1,1029 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MySocial</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+    />
+  </head>
+  <body>
     <!-- NAVIGATION -->
     <nav>
-        <div class="container">
-            <h2 class="logo">
-                MySocial
-            </h2>
-            <div class="search-bar">
-                <i class="uil uil-search"></i>
-                <input type="search" name="search" id="search" placeholder="Search for creators, people, places">
-            </div>
-            <div class="create">
-                <label class="btn btn-primary" for="create-post">Create</label>
-                <div class="profile-picture">
-                    <img src="https://scontent.flos1-1.fna.fbcdn.net/v/t39.30808-6/271196835_1057833685014118_7319685269969795871_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=QvWu1kVAsYwAX_nFu8M&_nc_ht=scontent.flos1-1.fna&oh=00_AT-p74r7tQIMkKOJ5t9g0Dwt0U-8ySh9vyStVzC8Wm8Xig&oe=62CDBC7E" alt="">
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="logo">
+          MySocial
+        </h2>
+        <div class="search-bar">
+          <i class="uil uil-search"></i>
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search for creators, people, places"
+          />
         </div>
+        <div class="create">
+          <label class="btn btn-primary" for="create-post">Create</label>
+          <div class="profile-picture">
+            <img
+              src="https://scontent.flos1-1.fna.fbcdn.net/v/t39.30808-6/271196835_1057833685014118_7319685269969795871_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=QvWu1kVAsYwAX_nFu8M&_nc_ht=scontent.flos1-1.fna&oh=00_AT-p74r7tQIMkKOJ5t9g0Dwt0U-8ySh9vyStVzC8Wm8Xig&oe=62CDBC7E"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
     </nav>
 
     <!-- MAIN SECTION -->
     <main>
-        <div class="container">
-            <!-- Left panel -->
-            <div class="left">
-                <a class="profile">
-                    <div class="profile-picture">
-                        <img src="https://scontent.flos1-1.fna.fbcdn.net/v/t39.30808-6/271196835_1057833685014118_7319685269969795871_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=QvWu1kVAsYwAX_nFu8M&_nc_ht=scontent.flos1-1.fna&oh=00_AT-p74r7tQIMkKOJ5t9g0Dwt0U-8ySh9vyStVzC8Wm8Xig&oe=62CDBC7E" alt="">
-                    </div>
-                    <div class="handle">
-                        <h4>Victor Akande</h4>
-                        <p class="text-muted">@a.victor</p>
-                    </div>
-                </a>
-
-                <!-- SIDEBAR -->
-                <div class="sidebar">
-                    <a class="menu-item active">
-                        <span><i class="uil uil-home"></i></span><h3>Home</h3>
-                    </a>
-                    <a class="menu-item">
-                        <span><i class="uil uil-compass"></i></span><h3>Explore</h3>
-                    </a>
-                    <a class="menu-item" id="notifications">
-                        <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span><h3>Notifications</h3>
-                        <!-- Notification popup -->
-                        <div class="notification-popup">
-                            <div>
-                                <div class="profile-picture">
-                                    <img src="images/profile-2.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Jeff Bezos</b> accept your friend request
-                                    <small class="text-muted">2 days ago</small>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="profile-picture">
-                                    <img src="images/profile-3.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Mark Cuban</b> just posted
-                                    <small class="text-muted">a few seconds ago</small>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="profile-picture">
-                                    <img src="images/profile-4.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Elon Musk</b> commented your post
-                                    <small class="text-muted">1 min ago</small>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="profile-picture">
-                                    <img src="images/profile-5.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Kylie Jenner</b> sent you a friend request
-                                    <small class="text-muted">5 hours ago</small>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="profile-picture">
-                                    <img src="images/profile-6.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Jennifer Lawrence</b> sent you message
-                                    <small class="text-muted">just now </small>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="profile-picture">
-                                    <img src="images/profile-7.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Sarah Hyland</b> liked your post
-                                    <small class="text-muted">a few seconds ago</small>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="menu-item" id="messages-notifications">
-                        <span><i class="uil uil-envelope-alt"><small class="notification-count">1</small></i></span><h3>Messages</h3>
-                    </a>
-                    <a class="menu-item">
-                        <span><i class="uil uil-bookmark"></i></span><h3>Bookmarks</h3>
-                    </a>
-                    <a class="menu-item">
-                         <span><i class="uil uil-chart-line"></i></span><h3>Analytics</h3>
-                    </a>
-                    <a class="menu-item">
-                        <span><i class="uil uil-palette"></i></span><h3>Theme</h3>
-                    </a>
-                    <a class="menu-item">
-                         <span><i class="uil uil-setting"></i></span><h3>Settings</h3>
-                    </a>
-                </div>
-                <!-- Sidebar End -->
-                <label class="btn btn-primary" for="create-post">Create Post</label>
+      <div class="container">
+        <!-- Left panel -->
+        <div class="left">
+          <a class="profile">
+            <div class="profile-picture">
+              <img
+                src="https://scontent.flos1-1.fna.fbcdn.net/v/t39.30808-6/271196835_1057833685014118_7319685269969795871_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=QvWu1kVAsYwAX_nFu8M&_nc_ht=scontent.flos1-1.fna&oh=00_AT-p74r7tQIMkKOJ5t9g0Dwt0U-8ySh9vyStVzC8Wm8Xig&oe=62CDBC7E"
+                alt=""
+              />
             </div>
-            <!-- End of left panel -->
-
-
-            <!-- Middle Panel -->
-            <div class="middle">
-                <!-- Stories -->
-                    <div class="stories">
-                        <div class="story">
-                            <div class="profile-picture">
-                                <img src="https://scontent.flos1-1.fna.fbcdn.net/v/t39.30808-6/271196835_1057833685014118_7319685269969795871_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=QvWu1kVAsYwAX_nFu8M&_nc_ht=scontent.flos1-1.fna&oh=00_AT-p74r7tQIMkKOJ5t9g0Dwt0U-8ySh9vyStVzC8Wm8Xig&oe=62CDBC7E" alt="">
-                            </div>
-                            <p class="name">My Story</p>
-                        </div>
-                        <div class="story">
-                            <div class="profile-picture">
-                                <img src="https://media1.popsugar-assets.com/files/thumbor/ptdgPx5tCvvD9kUsU7pQFMUkBIA/207x134:1865x1792/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/09/09/028/n/1922398/066318895d76e2ef0c31d8.46065434_/i/Jennifer-Aniston.jpg" alt="">
-                            </div>
-                            <p class="name">Jennifer Aniston</p>
-                        </div>
-                        <div class="story">
-                            <div class="profile-picture">
-                                <img src="https://pbs.twimg.com/profile_images/751591861127491584/l1swjFY4_400x400.jpg" alt="">
-                            </div>
-                            <p class="name">Charlie Sheen</p>
-                        </div>
-                        <div class="story">
-                            <div class="profile-picture">
-                                <img src="https://m.media-amazon.com/images/M/MV5BODQ0NTI0OTk0M15BMl5BanBnXkFtZTcwMDk2MDg5Nw@@._V1_.jpg" alt="">
-                            </div>
-                            <p class="name">Matt LeBanc</p>
-                        </div>
-                        <div class="story">
-                            <div class="profile-picture">
-                                <img src="https://m.media-amazon.com/images/M/MV5BMTU5OTA0ODcxNl5BMl5BanBnXkFtZTcwMjE3NjQxMw@@._V1_UY264_CR7,0,178,264_AL_.jpg" alt="">
-                            </div>
-                            <p class="name">Lisa Kudrow</p>
-                        </div>
-                        <div class="story">
-                            <div class="profile-picture">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Matthew_Perry_2013_lighting_and_color_corrected.jpg/800px-Matthew_Perry_2013_lighting_and_color_corrected.jpg" alt="">
-                            </div>
-                            <p class="name">Matthew Perry</p>
-                        </div>
-                    </div>
-                <!-- End of stories -->
-                <form action="" class="create-post">
-                    <div class="profile-picture">
-                        <img src="https://scontent.flos1-1.fna.fbcdn.net/v/t39.30808-6/271196835_1057833685014118_7319685269969795871_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=QvWu1kVAsYwAX_nFu8M&_nc_ht=scontent.flos1-1.fna&oh=00_AT-p74r7tQIMkKOJ5t9g0Dwt0U-8ySh9vyStVzC8Wm8Xig&oe=62CDBC7E" alt="">
-                    </div>
-                    <input type="text" name="create-post" id="create-post" placeholder="What's on your mind, Victor?">
-                    <input type="submit" value="Post" class="btn btn-primary">
-                </form>
-
-                <!-- Feeds -->
-
-                <div class="feeds">
-
-                   <!-- Feed 1 -->
-                   <div class="feed">
-                    <div class="head">
-                        <div class="user">
-                            <div class="profile-picture">
-                                <img src="https://www.thesfnews.com/wp-content/uploads/2019/06/Rihanna.jpg" alt="">
-                            </div>
-                            <div class="user-info">
-                                <h3>Rihanna</h3>
-                                <small>London, United Kingdom</small>
-                                
-                            </div>
-                        </div>
-                        <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
-                    </div>
-                        <div class="photo">
-                            <img src="https://tribuneonlineng.com/wp-content/uploads/2021/08/RIHANNA.jpg" alt="">
-                        </div>
-                        <div class="action-buttons">
-                            <div class="interaction-buttons">
-                                <span><i class="uil uil-heart"></i></span>
-                                <span><i class="uil uil-comment-dots"></i></span>
-                                <span><i class="uil uil-share-alt"></i></span>
-
-                            </div>
-                            <div class="bookmark">
-                                <span><i class="uil uil-bookmark-full"></i></span>
-                            </div>
-                        </div>
-                        <div class="liked-by">
-                            <span><img src="images/profile-1.jpg" alt=""></span>
-                            <span><img src="images/profile-12.jpg" alt=""></span>
-                            <span><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/South_by_Southwest_2019_4_-_46628270064_%28cropped%29.jpg" alt=""></span>
-                            <p>Liked by <b>A$AP Rocky</b> and <b>1,276,563 others</b></p>
-                        </div>
-
-                        <div class="caption">
-                            <p><b>Rihanna</b> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, nulla! <span class="hash-tag">#lorem</span></p>
-                        </div>
-                        <div class="comment text-muted">View all 3482 comments</div>
-                        <small>1 day ago</small>
-                    </div>
-                    <!-- End of Feed -->
-
-                    <!-- Feed 2 -->
-                     <div class="feed">
-                        <div class="head">
-                            <div class="user">
-                                <div class="profile-picture">
-                                    <img src="https://i.insider.com/5afef9de5e48ec4e008b46fb?width=700" alt="">
-                                </div>
-                                <div class="user-info">
-                                    <h3>Zendaya</h3>
-                                    <small>Abu Dhabi, UAE </small>
-                                    
-                                </div>
-                            </div>
-                            <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
-                        </div>
-                            <div class="photo">
-                                <img src="https://www.usmagazine.com/wp-content/uploads/2022/06/Zendaya-Denies-Pregnancy-Rumors-0001.jpg?quality=86&strip=all" alt="">
-                            </div>
-                            <div class="action-buttons">
-                                <div class="interaction-buttons">
-                                    <span><i class="uil uil-heart"></i></span>
-                                    <span><i class="uil uil-comment-dots"></i></span>
-                                    <span><i class="uil uil-share-alt"></i></span>
-
-                                </div>
-                                <div class="bookmark">
-                                    <span><i class="uil uil-bookmark-full"></i></span>
-                                </div>
-                            </div>
-                            <div class="liked-by">
-                                <span><img src="images/profile-11.jpg" alt=""></span>
-                                <span><img src="images/profile-13.jpg" alt=""></span>
-                                <span><img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTQ3NTI2ODcxNDU2Njg3NTk4/nicki_minaj_photo_by_kevin_mazur_wireimage_getty_498353136.jpg" alt=""></span>
-                                <p>Liked by <b>Nicki Minaj</b> and <b>2,309,356 others</b></p>
-                            </div>
-
-                            <div class="caption">
-                                <p><b>Zendaya</b> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, nulla! <span class="hash-tag">#lorem</span></p>
-                            </div>
-                            <div class="comment text-muted">View all 5821 comments</div>
-                            <small>5 day ago</small>
-                    </div>
-                    <!-- End of Feed -->
-
-                    <!-- Feed 3 -->
-                    <div class="feed">
-                        <div class="head">
-                            <div class="user">
-                                <div class="profile-picture">
-                                    <img src="https://images.genius.com/98367f3cd4548347b114452eb3a5927f.1000x1000x1.jpg" alt="">
-                                </div>
-                                <div class="user-info">
-                                    <h3>Lil Baby</h3>
-                                    <small>Hidden Hills</small>
-                                    
-                                </div>
-                            </div>
-                            <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
-                        </div>
-                            <div class="photo">
-                                <img src="https://images.complex.com/complex/images/c_fill,dpr_auto,f_auto,q_auto,w_1400/fl_lossy,pg_1/xb98a4r4fwc0eiwzfcx9/baby?fimg-ssr-default" alt="">
-                            </div>
-                            <div class="action-buttons">
-                                <div class="interaction-buttons">
-                                    <span><i class="uil uil-heart"></i></span>
-                                    <span><i class="uil uil-comment-dots"></i></span>
-                                    <span><i class="uil uil-share-alt"></i></span>
-
-                                </div>
-                                <div class="bookmark">
-                                    <span><i class="uil uil-bookmark-full"></i></span>
-                                </div>
-                            </div>
-                            <div class="liked-by">
-                                <span><img src="images/profile-16.jpg" alt=""></span>
-                                <span><img src="images/profile-18.jpg" alt=""></span>
-                                <span><img src="https://www.pinkvilla.com/imageresize/travis_scott_0.jpg?width=752&format=webp&t=pvorg" alt=""></span>
-                                <p>Liked by <b>Travis Scott</b> and <b>576,563 others</b></p>
-                            </div>
-
-                            <div class="caption">
-                                <p><b>Lil Baby</b> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, nulla! <span class="hash-tag">#lorem</span></p>
-                            </div>
-                            <div class="comment text-muted">View all 3482 comments</div>
-                            <small>1 day ago</small>
-                    </div>
-                    <!-- End of Feed -->
-
-                    <!-- Feed 4 -->
-                    <div class="feed">
-                        <div class="head">
-                            <div class="user">
-                                <div class="profile-picture">
-                                    <img src="https://assets.capitalxtra.com/2018/15/migos--1523978636-view-0.jpg" alt="">
-                                </div>
-                                <div class="user-info">
-                                    <h3>The Migos</h3>
-                                    <small>Straightenin</small>
-                                    
-                                </div>
-                            </div>
-                            <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
-                        </div>
-                            <div class="photo">
-                                <img src="https://media.pitchfork.com/photos/5c5d0f3bd2063c7976751301/16:9/w_1280,c_limit/Migos.jpg" alt="">
-                            </div>
-                            <div class="action-buttons">
-                                <div class="interaction-buttons">
-                                    <span><i class="uil uil-heart"></i></span>
-                                    <span><i class="uil uil-comment-dots"></i></span>
-                                    <span><i class="uil uil-share-alt"></i></span>
-
-                                </div>
-                                <div class="bookmark">
-                                    <span><i class="uil uil-bookmark-full"></i></span>
-                                </div>
-                            </div>
-                            <div class="liked-by">
-                                <span><img src="images/profile-10.jpg" alt=""></span>
-                                <span><img src="images/profile-12.jpg" alt=""></span>
-                                <span><img src="https://cdns-images.dzcdn.net/images/artist/6b5da92f68c73923061676bef1e06984/500x500.jpg" alt=""></span>
-                                <p>Liked by <b>Fivio Foreign</b> and <b>1,276,563 others</b></p>
-                            </div>
-
-                            <div class="caption">
-                                <p><b>The Migos</b> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, nulla! <span class="hash-tag">#lorem</span></p>
-                            </div>
-                            <div class="comment text-muted">View all 3482 comments</div>
-                            <small>1 day ago</small>
-                    </div>
-                    <!-- End of Feed -->
-
-                    <!-- Feed 5 -->
-                    <div class="feed">
-                        <div class="head">
-                            <div class="user">
-                                <div class="profile-picture">
-                                    <img src="data:image/jpeg;base64,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" alt="">
-                                </div>
-                                <div class="user-info">
-                                    <h3>McDonalds</h3>
-                                    <small></small>
-                                    
-                                </div>
-                            </div>
-                            <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
-                        </div>
-                            <div class="photo">
-                                <img src="https://www.eatthis.com/wp-content/uploads/sites/4/2022/01/mcdonalds-big-mac-fries.jpg?quality=82&strip=all" alt="">
-                            </div>
-                            <div class="action-buttons">
-                                <div class="interaction-buttons">
-                                    <span><i class="uil uil-heart"></i></span>
-                                    <span><i class="uil uil-comment-dots"></i></span>
-                                    <span><i class="uil uil-share-alt"></i></span>
-
-                                </div>
-                                <div class="bookmark">
-                                    <span><i class="uil uil-bookmark-full"></i></span>
-                                </div>
-                            </div>
-                            <div class="liked-by">
-                                <span><img src="images/profile-10.jpg" alt=""></span>
-                                <span><img src="images/profile-12.jpg" alt=""></span>
-                                <span><img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTU0OTkwNDUxOTQ5MDUzNDQ3/kanye-west-attends-the-christian-dior-show-as-part-of-the-paris-fashion-week-womenswear-fall-winter-2015-2016-on-march-6-2015-in-paris-france-photo-by-dominique-charriau-wireimage-square.jpg" alt=""></span>
-                                <p>Liked by <b>Kanye West</b> and <b>1,276,563 others</b></p>
-                            </div>
-
-                            <div class="caption">
-                                <p><b>McDonalds</b> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, nulla! <span class="hash-tag">#lorem</span></p>
-                            </div>
-                            <div class="comment text-muted">View all 3482 comments</div>
-                            <small>1 day ago</small>
-                    </div>
-                    <!-- End of Feed -->
-
-                    <!-- Feed 6 -->
-                    <div class="feed">
-                        <div class="head">
-                            <div class="user">
-                                <div class="profile-picture">
-                                    <img src="https://images-na.ssl-images-amazon.com/images/S/amzn-author-media-prod/4237evohdno3t2rsouqb5med7r.jpg" alt="">
-                                </div>
-                                <div class="user-info">
-                                    <h3>Kevin Hart</h3>
-                                    <small>Home Sweet Home</small>
-                                    
-                                </div>
-                            </div>
-                            <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
-                        </div>
-                            <div class="photo">
-                                <img src="https://static.onecms.io/wp-content/uploads/sites/20/2021/01/26/kevin-hart.jpg" alt="">
-                            </div>
-                            <div class="action-buttons">
-                                <div class="interaction-buttons">
-                                    <span><i class="uil uil-heart"></i></span>
-                                    <span><i class="uil uil-comment-dots"></i></span>
-                                    <span><i class="uil uil-share-alt"></i></span>
-
-                                </div>
-                                <div class="bookmark">
-                                    <span><i class="uil uil-bookmark-full"></i></span>
-                                </div>
-                            </div>
-                            <div class="liked-by">
-                                <span><img src="images/profile-10.jpg" alt=""></span>
-                                <span><img src="images/profile-12.jpg" alt=""></span>
-                                <span><img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTc5NjIyODM0ODM2ODc0Mzc3/dwayne-the-rock-johnson-gettyimages-1061959920.jpg" alt=""></span>
-                                <p>Liked by <b>Dwayne Johnson</b> and <b>1,276,563 others</b></p>
-                            </div>
-
-                            <div class="caption">
-                                <p><b>Kevin Hart</b> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, nulla! <span class="hash-tag">#lorem</span></p>
-                            </div>
-                            <div class="comment text-muted">View all 3482 comments</div>
-                            <small>1 day ago</small>
-                    </div>
-                    <!-- End of Feed -->
-
-                    <!-- Feed 7 -->
-                    <div class="feed">
-                        <div class="head">
-                            <div class="user">
-                                <div class="profile-picture">
-                                    <img src="https://cdn.smehost.net/2020sonymusiccouk-ukprod/wp-content/uploads/2019/10/16a2066d261a38a5ba3bff2e101acb93.jpg" alt="">
-                                </div>
-                                <div class="user-info">
-                                    <h3>DJ Khaled</h3>
-                                    <small>THEY DIDN'T BELIEVE IN US</small>
-                                    
-                                </div>
-                            </div>
-                            <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
-                        </div>
-                            <div class="photo">
-                                <img src="https://cdn.punchng.com/wp-content/uploads/2021/01/22154915/DJ-Khaled-scaled.jpg" alt="">
-                            </div>
-                            <div class="action-buttons">
-                                <div class="interaction-buttons">
-                                    <span><i class="uil uil-heart"></i></span>
-                                    <span><i class="uil uil-comment-dots"></i></span>
-                                    <span><i class="uil uil-share-alt"></i></span>
-
-                                </div>
-                                <div class="bookmark">
-                                    <span><i class="uil uil-bookmark-full"></i></span>
-                                </div>
-                            </div>
-                            <div class="liked-by">
-                                <span><img src="images/profile-10.jpg" alt=""></span>
-                                <span><img src="images/profile-12.jpg" alt=""></span>
-                                <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRvyghNX0sm80W_eySV8NIs25BKxwOnkLe5Q&usqp=CAU" alt=""></span>
-                                <p>Liked by <b>Fat Joe</b> and <b>976,563 others</b></p>
-                            </div>
-
-                            <div class="caption">
-                                <p><b>DJ Khaled</b> GOD DID!!! <span class="hash-tag">#lorem</span></p>
-                            </div>
-                            <div class="comment text-muted">View all 3482 comments</div>
-                            <small>1 day ago</small>
-                    </div>
-                    <!-- End of Feed -->
-                </div>
-                <!-- End of Feeds -->
+            <div class="handle">
+              <h4>Victor Akande</h4>
+              <p class="text-muted">@a.victor</p>
             </div>
-            <!-- End of Middle Section -->
-           
-            
-            <!-- Right Panel -->
-            <div class="right">
-                <div class="messages">
-                    <div class="heading">
-                        <h4>Messages</h4><i class="uil uil-edit"></i>
-                    </div>
-                    <!-- Search Bar -->
-                    <div class="search-bar">
-                        <i class="uil uil-search"></i>
-                            <input type="search" name="message-search" id="message-search" placeholder="Search Messages">
-                    </div>
-                    <!-- Messages category -->
-                    <div class="category">
-                        <h6 class="active">Primary</h6>
-                        <h6>General</h6>
-                        <h6 class="message-requests">Requests(7)</h6>
-                    </div>
-                    <!-- Message -->
-                    <div class="message">
-                        <div class="profile-picture">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTfuIB3EPPTdmrRfcPClbrJF7jnvoTkEzoSA&usqp=CAU" alt="">
-                            <div class="active"></div>
-                        </div>
-                        <div class="message-body">
-                            <h5>Margot Robbie</h5>
-                            <p class="text-bold"><b>See you at dinner ❤️</b></p>
-                        </div>
-                    </div>
-                    <!-- Message -->
-                    <div class="message">
-                        <div class="profile-picture">
-                            <img src="https://cdn.smehost.net/2020sonymusiccouk-ukprod/wp-content/uploads/2019/10/Miley-Cyrus-03_MidnightSky_WhiteLight_2302.jpg" alt="">
-                            <div class="active"></div>
-                        </div>
-                        <div class="message-body">
-                            <h5>Miley Cyrus</h5>
-                            <p class="text-bold"><b>3 new messages</b></p>
-                        </div>
-                    </div>                     
-                    <!-- Message -->
-                    <div class="message">
-                        <div class="profile-picture">
-                            <img src="https://media.gq.com/photos/6255cb3f1879d34b94c04f4e/master/w_1600%2Cc_limit/GQ0522_Future_13.jpg" alt="">
-                        </div>
-                        <div class="message-body">
-                            <h5>Future Hendrix</h5>
-                            <p class="text-muted">Percoucets, Molly Percoucets</p>
-                        </div>
-                    </div>
-                    <!-- Message -->
-                    <div class="message">
-                        <div class="profile-picture">
-                            <img src="https://yt3.ggpht.com/ytc/AKedOLSaXT0o-yJFcs40LF3_1wVCsNgqqLhUaLO-df9BhA=s900-c-k-c0x00ffffff-no-rj" alt="">
-                            <div class="active"></div>
-                        </div>
-                        <div class="message-body">
-                            <h5>KSI</h5>
-                            <p class="text-muted">See you at Sidemen Sunday Nigga</p>
-                        </div>
-                    </div>
-                    <!-- Message -->
-                    <div class="message">
-                        <div class="profile-picture">
-                            <img src="https://imageio.forbes.com/specials-images/imageserve/5dea9626e961e100078f54d1/Grant-Cardone/960x0.jpg?format=jpg&width=960" alt="">
-                        </div>
-                        <div class="message-body">
-                            <h5>Grant Cardone</h5>
-                            <p class="text-muted">You gotta start that business now bruh</p>
-                        </div>
-                    </div>
-                    <!-- Message -->
-                    <div class="message">
-                        <div class="profile-picture">
-                            <img src="https://29secrets.com/wp-content/uploads/Ella%20Henderson.jpg" alt="">
-                        </div>
-                        <div class="message-body">
-                            <h5>Ella Henderson</h5>
-                            <p class="text-muted">I know right</p>
-                        </div>
-                    </div>
-                    <!-- Message -->
-                    <div class="message">
-                        <div class="profile-picture">
-                            <img src="https://egscholars.com/wp-content/uploads/2022/02/Dua-Lipa.jpg" alt="">
-                        </div>
-                        <div class="message-body">
-                            <h5>Dua Lipa</h5>
-                            <p class="text-muted">I want you baby 😋 </p>
-                        </div>
-                    </div>
-                    
-                   
-                </div>
+          </a>
 
-                <!-- End of messages -->
-
-                <!-- Friend Requests -->
-                <div class="friend-requests">
-                    <h4>Requests</h4>
-                    <!-- Friend request -->
-                    <div class="request">
-                        <div class="info">
-                            <div class="profile-picture">
-                                <img src="https://media1.popsugar-assets.com/files/thumbor/gS1F3gpyABy4n9Pzbz1yXq2h9HQ/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2018/07/13/003/n/1922398/fff1f6805b49303d109c19.41696136_/i/Courteney-Cox.jpg" alt="">
-                            </div>
-                            <div>
-                                <h5>Courteney Cox</h5>
-                                <p class="text-muted">
-                                    18 mutual friends
-                                </p>
-                            </div>
-                        </div>
-                        <div class="action">
-                            <button class="btn btn-primary">
-                                Accept
-                            </button>
-                            <button class="btn">
-                                Decline
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Friend request -->
-                    <div class="request">
-                        <div class="info">
-                            <div class="profile-picture">
-                                <img src="https://cdn.britannica.com/65/227665-050-D74A477E/American-actor-Leonardo-DiCaprio-2016.jpg" alt="">
-                            </div>
-                            <div>
-                                <h5>Leonardo DiCaprio</h5>
-                                <p class="text-muted">
-                                    13 mutual friends
-                                </p>
-                            </div>
-                        </div>
-                        <div class="action">
-                            <button class="btn btn-primary">
-                                Accept
-                            </button>
-                            <button class="btn">
-                                Decline
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Friend request -->
-                    <div class="request">
-                        <div class="info">
-                            <div class="profile-picture">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Tom_Cruise_by_Gage_Skidmore_2.jpg" alt="">
-                            </div>
-                            <div>
-                                <h5>Tom Cruise</h5>
-                                <p class="text-muted">
-                                    34 mutual friends
-                                </p>
-                            </div>
-                        </div>
-                        <div class="action">
-                            <button class="btn btn-primary">
-                                Accept
-                            </button>
-                            <button class="btn">
-                                Decline
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Friend request -->
-                    <div class="request">
-                        <div class="info">
-                            <div class="profile-picture">
-                                <img src="https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2020/8/27/jfuwclbld3r5ympxjwhc/saweetie-portrait-nails" alt="">
-                            </div>
-                            <div>
-                                <h5>Saweetie</h5>
-                                <p class="text-muted">
-                                    34 mutual friends
-                                </p>
-                            </div>
-                        </div>
-                        <div class="action">
-                            <button class="btn btn-primary">
-                                Accept
-                            </button>
-                            <button class="btn">
-                                Decline
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Friend request -->
-                    <div class="request">
-                        <div class="info">
-                            <div class="profile-picture">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Don_Toliver_2017.png" alt="">                            </div>
-                            <div>
-                                <h5>Don Toliver</h5>
-                                <p class="text-muted">
-                                    25 mutual friends
-                                </p>
-                            </div>
-                        </div>
-                        <div class="action">
-                            <button class="btn btn-primary">
-                                Accept
-                            </button>
-                            <button class="btn">
-                                Decline
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Friend request -->
-                    <div class="request">
-                        <div class="info">
-                            <div class="profile-picture">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Tom_Holland_by_Gage_Skidmore.jpg/1200px-Tom_Holland_by_Gage_Skidmore.jpg" alt="">                            </div>
-                            <div>
-                                <h5>Tom Holland</h5>
-                                <p class="text-muted">
-                                    13 mutual friends
-                                </p>
-                            </div>
-                        </div>
-                        <div class="action">
-                            <button class="btn btn-primary">
-                                Accept
-                            </button>
-                            <button class="btn">
-                                Decline
-                            </button>
-                        </div>
-                    </div>
+          <!-- SIDEBAR -->
+          <div class="sidebar">
+            <a class="menu-item active">
+              <span><i class="uil uil-home"></i></span>
+              <h3>Home</h3>
+            </a>
+            <a class="menu-item">
+              <span><i class="uil uil-compass"></i></span>
+              <h3>Explore</h3>
+            </a>
+            <a class="menu-item" id="notifications">
+              <span>
+                <i class="uil uil-bell">
+                  <small class="notification-count">9+</small>
+                </i>
+              </span>
+              <h3>Notifications</h3>
+              <!-- Notification popup -->
+              <div class="notification-popup">
+                <div>
+                  <div class="profile-picture">
+                    <img src="images/profile-2.jpg" alt="" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Jeff Bezos</b>
+                    accept your friend request
+                    <small class="text-muted">2 days ago</small>
+                  </div>
                 </div>
-            </div>
-            <!-- End of Right Section -->
+                <div>
+                  <div class="profile-picture">
+                    <img src="images/profile-3.jpg" alt="" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Mark Cuban</b>
+                    just posted
+                    <small class="text-muted">a few seconds ago</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="images/profile-4.jpg" alt="" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Elon Musk</b>
+                    commented your post
+                    <small class="text-muted">1 min ago</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="images/profile-5.jpg" alt="" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Kylie Jenner</b>
+                    sent you a friend request
+                    <small class="text-muted">5 hours ago</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="images/profile-6.jpg" alt="" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Jennifer Lawrence</b>
+                    sent you message
+                    <small class="text-muted">just now</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="images/profile-7.jpg" alt="" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Sarah Hyland</b>
+                    liked your post
+                    <small class="text-muted">a few seconds ago</small>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="menu-item" id="messages-notifications">
+              <span>
+                <i class="uil uil-envelope-alt">
+                  <small class="notification-count">1</small>
+                </i>
+              </span>
+              <h3>Messages</h3>
+            </a>
+            <a class="menu-item">
+              <span><i class="uil uil-bookmark"></i></span>
+              <h3>Bookmarks</h3>
+            </a>
+            <a class="menu-item">
+              <span><i class="uil uil-chart-line"></i></span>
+              <h3>Analytics</h3>
+            </a>
+            <a class="menu-item">
+              <span><i class="uil uil-palette"></i></span>
+              <h3>Theme</h3>
+            </a>
+            <a class="menu-item">
+              <span><i class="uil uil-setting"></i></span>
+              <h3>Settings</h3>
+            </a>
+          </div>
+          <!-- Sidebar End -->
+          <label class="btn btn-primary" for="create-post">Create Post</label>
         </div>
+        <!-- End of left panel -->
+
+        <!-- Middle Panel -->
+        <div class="middle">
+          <!-- Stories -->
+          <div class="stories">
+            <div class="story">
+              <div class="profile-picture">
+                <img
+                  src="https://scontent.flos1-1.fna.fbcdn.net/v/t39.30808-6/271196835_1057833685014118_7319685269969795871_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=QvWu1kVAsYwAX_nFu8M&_nc_ht=scontent.flos1-1.fna&oh=00_AT-p74r7tQIMkKOJ5t9g0Dwt0U-8ySh9vyStVzC8Wm8Xig&oe=62CDBC7E"
+                  alt=""
+                />
+              </div>
+              <p class="name">My Story</p>
+            </div>
+            <div class="story">
+              <div class="profile-picture">
+                <img
+                  src="https://media1.popsugar-assets.com/files/thumbor/ptdgPx5tCvvD9kUsU7pQFMUkBIA/207x134:1865x1792/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/09/09/028/n/1922398/066318895d76e2ef0c31d8.46065434_/i/Jennifer-Aniston.jpg"
+                  alt=""
+                />
+              </div>
+              <p class="name">Jennifer Aniston</p>
+            </div>
+            <div class="story">
+              <div class="profile-picture">
+                <img
+                  src="https://pbs.twimg.com/profile_images/751591861127491584/l1swjFY4_400x400.jpg"
+                  alt=""
+                />
+              </div>
+              <p class="name">Charlie Sheen</p>
+            </div>
+            <div class="story">
+              <div class="profile-picture">
+                <img
+                  src="https://m.media-amazon.com/images/M/MV5BODQ0NTI0OTk0M15BMl5BanBnXkFtZTcwMDk2MDg5Nw@@._V1_.jpg"
+                  alt=""
+                />
+              </div>
+              <p class="name">Matt LeBanc</p>
+            </div>
+            <div class="story">
+              <div class="profile-picture">
+                <img
+                  src="https://m.media-amazon.com/images/M/MV5BMTU5OTA0ODcxNl5BMl5BanBnXkFtZTcwMjE3NjQxMw@@._V1_UY264_CR7,0,178,264_AL_.jpg"
+                  alt=""
+                />
+              </div>
+              <p class="name">Lisa Kudrow</p>
+            </div>
+            <div class="story">
+              <div class="profile-picture">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Matthew_Perry_2013_lighting_and_color_corrected.jpg/800px-Matthew_Perry_2013_lighting_and_color_corrected.jpg"
+                  alt=""
+                />
+              </div>
+              <p class="name">Matthew Perry</p>
+            </div>
+          </div>
+          <!-- End of stories -->
+          <form action="" class="create-post">
+            <div class="profile-picture">
+              <img
+                src="https://scontent.flos1-1.fna.fbcdn.net/v/t39.30808-6/271196835_1057833685014118_7319685269969795871_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=QvWu1kVAsYwAX_nFu8M&_nc_ht=scontent.flos1-1.fna&oh=00_AT-p74r7tQIMkKOJ5t9g0Dwt0U-8ySh9vyStVzC8Wm8Xig&oe=62CDBC7E"
+                alt=""
+              />
+            </div>
+            <input
+              type="text"
+              name="create-post"
+              id="create-post"
+              placeholder="What's on your mind, Victor?"
+            />
+            <input type="submit" value="Post" class="btn btn-primary" />
+          </form>
+
+          <!-- Feeds -->
+
+          <div class="feeds">
+            <!-- Feed 1 -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img
+                      src="https://www.thesfnews.com/wp-content/uploads/2019/06/Rihanna.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="user-info">
+                    <h3>Rihanna</h3>
+                    <small>London, United Kingdom</small>
+                  </div>
+                </div>
+                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+              </div>
+              <div class="photo">
+                <img
+                  src="https://tribuneonlineng.com/wp-content/uploads/2021/08/RIHANNA.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span><img src="images/profile-1.jpg" alt="" /></span>
+                <span><img src="images/profile-12.jpg" alt="" /></span>
+                <span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/f/fb/South_by_Southwest_2019_4_-_46628270064_%28cropped%29.jpg"
+                    alt=""
+                  />
+                </span>
+                <p>
+                  Liked by
+                  <b>A$AP Rocky</b>
+                  and
+                  <b>1,276,563 others</b>
+                </p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Rihanna</b>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Delectus, nulla!
+                  <span class="hash-tag">#lorem</span>
+                </p>
+              </div>
+              <div class="comment text-muted">View all 3482 comments</div>
+              <small>1 day ago</small>
+            </div>
+            <!-- End of Feed -->
+
+            <!-- Feed 2 -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img
+                      src="https://i.insider.com/5afef9de5e48ec4e008b46fb?width=700"
+                      alt=""
+                    />
+                  </div>
+                  <div class="user-info">
+                    <h3>Zendaya</h3>
+                    <small>Abu Dhabi, UAE</small>
+                  </div>
+                </div>
+                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+              </div>
+              <div class="photo">
+                <img
+                  src="https://www.usmagazine.com/wp-content/uploads/2022/06/Zendaya-Denies-Pregnancy-Rumors-0001.jpg?quality=86&strip=all"
+                  alt=""
+                />
+              </div>
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span><img src="images/profile-11.jpg" alt="" /></span>
+                <span><img src="images/profile-13.jpg" alt="" /></span>
+                <span>
+                  <img
+                    src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTQ3NTI2ODcxNDU2Njg3NTk4/nicki_minaj_photo_by_kevin_mazur_wireimage_getty_498353136.jpg"
+                    alt=""
+                  />
+                </span>
+                <p>
+                  Liked by
+                  <b>Nicki Minaj</b>
+                  and
+                  <b>2,309,356 others</b>
+                </p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Zendaya</b>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Delectus, nulla!
+                  <span class="hash-tag">#lorem</span>
+                </p>
+              </div>
+              <div class="comment text-muted">View all 5821 comments</div>
+              <small>5 day ago</small>
+            </div>
+            <!-- End of Feed -->
+
+            <!-- Feed 3 -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img
+                      src="https://images.genius.com/98367f3cd4548347b114452eb3a5927f.1000x1000x1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="user-info">
+                    <h3>Lil Baby</h3>
+                    <small>Hidden Hills</small>
+                  </div>
+                </div>
+                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+              </div>
+              <div class="photo">
+                <img
+                  src="https://images.complex.com/complex/images/c_fill,dpr_auto,f_auto,q_auto,w_1400/fl_lossy,pg_1/xb98a4r4fwc0eiwzfcx9/baby?fimg-ssr-default"
+                  alt=""
+                />
+              </div>
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span><img src="images/profile-16.jpg" alt="" /></span>
+                <span><img src="images/profile-18.jpg" alt="" /></span>
+                <span>
+                  <img
+                    src="https://www.pinkvilla.com/imageresize/travis_scott_0.jpg?width=752&format=webp&t=pvorg"
+                    alt=""
+                  />
+                </span>
+                <p>
+                  Liked by
+                  <b>Travis Scott</b>
+                  and
+                  <b>576,563 others</b>
+                </p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Lil Baby</b>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Delectus, nulla!
+                  <span class="hash-tag">#lorem</span>
+                </p>
+              </div>
+              <div class="comment text-muted">View all 3482 comments</div>
+              <small>1 day ago</small>
+            </div>
+            <!-- End of Feed -->
+
+            <!-- Feed 4 -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img
+                      src="https://assets.capitalxtra.com/2018/15/migos--1523978636-view-0.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="user-info">
+                    <h3>The Migos</h3>
+                    <small>Straightenin</small>
+                  </div>
+                </div>
+                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+              </div>
+              <div class="photo">
+                <img
+                  src="https://media.pitchfork.com/photos/5c5d0f3bd2063c7976751301/16:9/w_1280,c_limit/Migos.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span><img src="images/profile-10.jpg" alt="" /></span>
+                <span><img src="images/profile-12.jpg" alt="" /></span>
+                <span>
+                  <img
+                    src="https://cdns-images.dzcdn.net/images/artist/6b5da92f68c73923061676bef1e06984/500x500.jpg"
+                    alt=""
+                  />
+                </span>
+                <p>
+                  Liked by
+                  <b>Fivio Foreign</b>
+                  and
+                  <b>1,276,563 others</b>
+                </p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>The Migos</b>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Delectus, nulla!
+                  <span class="hash-tag">#lorem</span>
+                </p>
+              </div>
+              <div class="comment text-muted">View all 3482 comments</div>
+              <small>1 day ago</small>
+            </div>
+            <!-- End of Feed -->
+
+            <!-- Feed 5 -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img
+                      src="data:image/jpeg;base64,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"
+                      alt=""
+                    />
+                  </div>
+                  <div class="user-info">
+                    <h3>McDonalds</h3>
+                    <small></small>
+                  </div>
+                </div>
+                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+              </div>
+              <div class="photo">
+                <img
+                  src="https://www.eatthis.com/wp-content/uploads/sites/4/2022/01/mcdonalds-big-mac-fries.jpg?quality=82&strip=all"
+                  alt=""
+                />
+              </div>
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span><img src="images/profile-10.jpg" alt="" /></span>
+                <span><img src="images/profile-12.jpg" alt="" /></span>
+                <span>
+                  <img
+                    src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTU0OTkwNDUxOTQ5MDUzNDQ3/kanye-west-attends-the-christian-dior-show-as-part-of-the-paris-fashion-week-womenswear-fall-winter-2015-2016-on-march-6-2015-in-paris-france-photo-by-dominique-charriau-wireimage-square.jpg"
+                    alt=""
+                  />
+                </span>
+                <p>
+                  Liked by
+                  <b>Kanye West</b>
+                  and
+                  <b>1,276,563 others</b>
+                </p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>McDonalds</b>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Delectus, nulla!
+                  <span class="hash-tag">#lorem</span>
+                </p>
+              </div>
+              <div class="comment text-muted">View all 3482 comments</div>
+              <small>1 day ago</small>
+            </div>
+            <!-- End of Feed -->
+
+            <!-- Feed 6 -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img
+                      src="https://images-na.ssl-images-amazon.com/images/S/amzn-author-media-prod/4237evohdno3t2rsouqb5med7r.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="user-info">
+                    <h3>Kevin Hart</h3>
+                    <small>Home Sweet Home</small>
+                  </div>
+                </div>
+                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+              </div>
+              <div class="photo">
+                <img
+                  src="https://static.onecms.io/wp-content/uploads/sites/20/2021/01/26/kevin-hart.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span><img src="images/profile-10.jpg" alt="" /></span>
+                <span><img src="images/profile-12.jpg" alt="" /></span>
+                <span>
+                  <img
+                    src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTc5NjIyODM0ODM2ODc0Mzc3/dwayne-the-rock-johnson-gettyimages-1061959920.jpg"
+                    alt=""
+                  />
+                </span>
+                <p>
+                  Liked by
+                  <b>Dwayne Johnson</b>
+                  and
+                  <b>1,276,563 others</b>
+                </p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Kevin Hart</b>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Delectus, nulla!
+                  <span class="hash-tag">#lorem</span>
+                </p>
+              </div>
+              <div class="comment text-muted">View all 3482 comments</div>
+              <small>1 day ago</small>
+            </div>
+            <!-- End of Feed -->
+
+            <!-- Feed 7 -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img
+                      src="https://cdn.smehost.net/2020sonymusiccouk-ukprod/wp-content/uploads/2019/10/16a2066d261a38a5ba3bff2e101acb93.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="user-info">
+                    <h3>DJ Khaled</h3>
+                    <small>THEY DIDN'T BELIEVE IN US</small>
+                  </div>
+                </div>
+                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+              </div>
+              <div class="photo">
+                <img
+                  src="https://cdn.punchng.com/wp-content/uploads/2021/01/22154915/DJ-Khaled-scaled.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span><img src="images/profile-10.jpg" alt="" /></span>
+                <span><img src="images/profile-12.jpg" alt="" /></span>
+                <span>
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRvyghNX0sm80W_eySV8NIs25BKxwOnkLe5Q&usqp=CAU"
+                    alt=""
+                  />
+                </span>
+                <p>
+                  Liked by
+                  <b>Fat Joe</b>
+                  and
+                  <b>976,563 others</b>
+                </p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>DJ Khaled</b>
+                  GOD DID!!!
+                  <span class="hash-tag">#lorem</span>
+                </p>
+              </div>
+              <div class="comment text-muted">View all 3482 comments</div>
+              <small>1 day ago</small>
+            </div>
+            <!-- End of Feed -->
+          </div>
+          <!-- End of Feeds -->
+        </div>
+        <!-- End of Middle Section -->
+
+        <!-- Right Panel -->
+        <div class="right">
+          <div class="messages">
+            <div class="heading">
+              <h4>Messages</h4>
+              <i class="uil uil-edit"></i>
+            </div>
+            <!-- Search Bar -->
+            <div class="search-bar">
+              <i class="uil uil-search"></i>
+              <input
+                type="search"
+                name="message-search"
+                id="message-search"
+                placeholder="Search Messages"
+              />
+            </div>
+            <!-- Messages category -->
+            <div class="category">
+              <h6 class="active">Primary</h6>
+              <h6>General</h6>
+              <h6 class="message-requests">Requests(7)</h6>
+            </div>
+            <!-- Message -->
+            <div class="message">
+              <div class="profile-picture">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTfuIB3EPPTdmrRfcPClbrJF7jnvoTkEzoSA&usqp=CAU"
+                  alt=""
+                />
+                <div class="active"></div>
+              </div>
+              <div class="message-body">
+                <h5>Margot Robbie</h5>
+                <p class="text-bold"><b>See you at dinner ❤️</b></p>
+              </div>
+            </div>
+            <!-- Message -->
+            <div class="message">
+              <div class="profile-picture">
+                <img
+                  src="https://cdn.smehost.net/2020sonymusiccouk-ukprod/wp-content/uploads/2019/10/Miley-Cyrus-03_MidnightSky_WhiteLight_2302.jpg"
+                  alt=""
+                />
+                <div class="active"></div>
+              </div>
+              <div class="message-body">
+                <h5>Miley Cyrus</h5>
+                <p class="text-bold"><b>3 new messages</b></p>
+              </div>
+            </div>
+            <!-- Message -->
+            <div class="message">
+              <div class="profile-picture">
+                <img
+                  src="https://media.gq.com/photos/6255cb3f1879d34b94c04f4e/master/w_1600%2Cc_limit/GQ0522_Future_13.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="message-body">
+                <h5>Future Hendrix</h5>
+                <p class="text-muted">Percoucets, Molly Percoucets</p>
+              </div>
+            </div>
+            <!-- Message -->
+            <div class="message">
+              <div class="profile-picture">
+                <img
+                  src="https://yt3.ggpht.com/ytc/AKedOLSaXT0o-yJFcs40LF3_1wVCsNgqqLhUaLO-df9BhA=s900-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                />
+                <div class="active"></div>
+              </div>
+              <div class="message-body">
+                <h5>KSI</h5>
+                <p class="text-muted">See you at Sidemen Sunday Nigga</p>
+              </div>
+            </div>
+            <!-- Message -->
+            <div class="message">
+              <div class="profile-picture">
+                <img
+                  src="https://imageio.forbes.com/specials-images/imageserve/5dea9626e961e100078f54d1/Grant-Cardone/960x0.jpg?format=jpg&width=960"
+                  alt=""
+                />
+              </div>
+              <div class="message-body">
+                <h5>Grant Cardone</h5>
+                <p class="text-muted">You gotta start that business now bruh</p>
+              </div>
+            </div>
+            <!-- Message -->
+            <div class="message">
+              <div class="profile-picture">
+                <img
+                  src="https://29secrets.com/wp-content/uploads/Ella%20Henderson.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="message-body">
+                <h5>Ella Henderson</h5>
+                <p class="text-muted">I know right</p>
+              </div>
+            </div>
+            <!-- Message -->
+            <div class="message">
+              <div class="profile-picture">
+                <img
+                  src="https://egscholars.com/wp-content/uploads/2022/02/Dua-Lipa.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="message-body">
+                <h5>Dua Lipa</h5>
+                <p class="text-muted">I want you baby 😋</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- End of messages -->
+
+          <!-- Friend Requests -->
+          <div class="friend-requests">
+            <h4>Requests</h4>
+            <!-- Friend request -->
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img
+                    src="https://media1.popsugar-assets.com/files/thumbor/gS1F3gpyABy4n9Pzbz1yXq2h9HQ/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2018/07/13/003/n/1922398/fff1f6805b49303d109c19.41696136_/i/Courteney-Cox.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h5>Courteney Cox</h5>
+                  <p class="text-muted">
+                    18 mutual friends
+                  </p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">
+                  Accept
+                </button>
+                <button class="btn">
+                  Decline
+                </button>
+              </div>
+            </div>
+            <!-- Friend request -->
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img
+                    src="https://cdn.britannica.com/65/227665-050-D74A477E/American-actor-Leonardo-DiCaprio-2016.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h5>Leonardo DiCaprio</h5>
+                  <p class="text-muted">
+                    13 mutual friends
+                  </p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">
+                  Accept
+                </button>
+                <button class="btn">
+                  Decline
+                </button>
+              </div>
+            </div>
+            <!-- Friend request -->
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/3/33/Tom_Cruise_by_Gage_Skidmore_2.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h5>Tom Cruise</h5>
+                  <p class="text-muted">
+                    34 mutual friends
+                  </p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">
+                  Accept
+                </button>
+                <button class="btn">
+                  Decline
+                </button>
+              </div>
+            </div>
+            <!-- Friend request -->
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img
+                    src="https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2020/8/27/jfuwclbld3r5ympxjwhc/saweetie-portrait-nails"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h5>Saweetie</h5>
+                  <p class="text-muted">
+                    34 mutual friends
+                  </p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">
+                  Accept
+                </button>
+                <button class="btn">
+                  Decline
+                </button>
+              </div>
+            </div>
+            <!-- Friend request -->
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/9/93/Don_Toliver_2017.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h5>Don Toliver</h5>
+                  <p class="text-muted">
+                    25 mutual friends
+                  </p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">
+                  Accept
+                </button>
+                <button class="btn">
+                  Decline
+                </button>
+              </div>
+            </div>
+            <!-- Friend request -->
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Tom_Holland_by_Gage_Skidmore.jpg/1200px-Tom_Holland_by_Gage_Skidmore.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h5>Tom Holland</h5>
+                  <p class="text-muted">
+                    13 mutual friends
+                  </p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">
+                  Accept
+                </button>
+                <button class="btn">
+                  Decline
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Right Section -->
+      </div>
     </main>
 
-<!-- Customization -->
-<div class="customize-theme">
-    <div class="card">
+    <!-- Customization -->
+    <div class="customize-theme">
+      <div class="card">
         <h2>Display Settings</h2>
         <p class="text-muted">Manage font size, color and background</p>
 
         <!-- Font Size -->
         <div class="font-size">
-            <h4>Font Size</h4>
-            <div>
-                <h6>Small</h6>
-                <div class="choose-size">
-                    <span class="active"></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <h3>Large</h3>
+          <h4>Font Size</h4>
+          <div>
+            <h6>Small</h6>
+            <div class="choose-size">
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
+            <h3>Large</h3>
+          </div>
         </div>
 
         <!-- Theme -->
         <div class="color">
-            <h4>Theme Colour</h4>
-            <div class="choose-color">
-                <span class="active"></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+          <h4>Theme Colour</h4>
+          <div class="choose-color">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
 
         <!-- Background Theme -->
         <div class="background">
-            <h4>Background</h4>
-            <div class="choose-bg">
-                <div class="bg-1 active">
-                    <span></span>
-                    <h5 for="bg-1">Light</h5>
-                </div>
-                <div class="bg-2">
-                    <span></span>
-                    <h5 for="bg-2">Dark</h5>
-                </div>
-                <div class="bg-3">
-                    <span></span>
-                    <h5 for="bg-3">Lights Out</h5>
-                </div>
+          <h4>Background</h4>
+          <div class="choose-bg">
+            <div class="bg-1 active">
+              <span></span>
+              <h5 for="bg-1">Light</h5>
             </div>
+            <div class="bg-2">
+              <span></span>
+              <h5 for="bg-2">Dark</h5>
+            </div>
+            <div class="bg-3">
+              <span></span>
+              <h5 for="bg-3">Lights Out</h5>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-
-
-</body>
+  </body>
 </html>
