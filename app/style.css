@@ -280,6 +280,8 @@ main .container .left .profile {
   justify-content: space-between;
   height: 12rem;
   gap: 0.5rem;
+  overflow-x: scroll;
+  
 }
 
 .middle .stories .story {
